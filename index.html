@@ -8,9 +8,54 @@
     <!-- website icon here  -->
     <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
 
-    
+    <!-- Tailwind setup  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- fontawesome setup  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- fonts here  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+ 
+     <style>
+         .primary-font {
+          font-family: "Poppins", serif;
+         }
+         .title-font {
+             font-family: "Roboto Slab", serif;
+         }
+         .dm-sans {
+             font-family: "DM Sans", serif;
+         }
+     </style>
+
+    <!-- Theme setup  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#FA5252',
+                        'secondary-color': '#DD2476'
+                
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+<body class="bg-[url('./Images/bg.png')] bg-cover bg-center bg-no-repeat primary-font">
+   <!-- Menu Section -->
+   <nav class="flex justify-center mt-6">
+    <ul class="flex space-x-6 bg-white shadow-lg rounded-lg p-4">
+        <li><a href="/about-me.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gray-100 text-sm text-[#44566C] hover:bg-gray-200"><i class="fa-regular fa-user"></i> About</a></li>
+        <li><a href="/home.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gray-100 text-sm text-[#44566C] hover:bg-gray-200"><i class="fa-regular fa-file-lines"></i> Resume</a></li>
+        <li><a href="/projects.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gray-100 text-sm text-[#44566C] hover:bg-gray-200"><i class="fa-brands fa-connectdevelop"></i> Works</a></li>
+        <li><a href="/blogs.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gray-100 text-sm text-[#44566C] hover:bg-gray-200"><i class="fa-brands fa-blogger"></i> Blogs</a></li>
+        <li><a href="/contact.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gray-100 text-sm text-[#44566C] hover:bg-gray-200"> <i class="fa-regular fa-address-book"></i> Contact</a></li>
+    </ul>
+</nav>
 </body>
 </html>
