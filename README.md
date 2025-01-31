@@ -22,6 +22,8 @@ cd personal-portfolio
 
 open 'index.html' in any website like google chrome, firefox or others.
 
+N.B. There is no need to install any dependencies to run the files locally. One can either open all the files separately using browser or can visit the live site link to be able to use the links.
+
 
 ## Features
 - Responsive design for all devices
