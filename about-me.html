@@ -45,8 +45,40 @@
             }
         }
     </script>
+     <!-- Animation styles  -->
+     <style>
+        /* Fade-in effect for the entire page */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+      
+        /* Slide-in effect for profile section */
+        .slide-in {
+            animation: slideIn 0.8s ease-out;
+        }
+      
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+      
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+      </style>
 </head>
-<body class="bg-[url('./Images/bg2.jpg')] bg-cover bg-center bg-no-repeat primary-font">
+<body class="bg-[url('./Images/bg3.jpeg')] bg-cover bg-center bg-no-repeat primary-font fade-in">
 
      <!-- container body  -->
      <div class="w-11/12 md:w-4/5 py-6 mx-auto flex flex-col md:flex-row gap-8 md:py-24">
@@ -65,66 +97,66 @@
        <!-- Left side contents  -->
         <div class="w-full md:w-1/3">
               <!-- Profile Section -->
-    <section class="relative flex flex-col items-center bg-white shadow-lg p-2 rounded-2xl mx-auto">
-        <!-- Profile Image -->
-        <div class="absolute -top-16 w-32 h-32 bg-gray-300 flex items-center justify-center rounded-xl shadow-md">
-            240X240
-        </div>
-    
-        <!-- Profile Details -->
-        <div class="mt-20 text-center w-11/12">
-            <h2 class="text-xl title-font font-bold">Monalisa Ashley</h2>
-            <div class="bg-[#F3F6F6] p-1 rounded-md"><p class="text-gray-600 mt-1">UI/UX Designer</p></div>
-    
-            <!-- Social Media Icons -->
-            <div class="flex justify-center space-x-4 mt-4">
-                <div class="bg-[#F3F6F6] p-2 rounded-md"><a href="#" class="text-[#1773EA]"><i class="fa-brands fa-facebook-f fa-lg"></i></a></div>
-                <div class="bg-[#F3F6F6] p-2 rounded-md"><a href="#" class="text-[#1C9CEA]"><i class="fa-brands fa-twitter fa-lg"></i></a></div>
-                <div class="bg-[#F3F6F6] p-2 rounded-md"><a href="#" class="bg-gradient-to-b from-[#515ECF] via-[#C53184] via-36% via-[#F3673A] via-75% to-[#DB2E7A] text-transparent bg-clip-text">
-                    <i class="fa-brands fa-instagram fa-lg"></i>
-                </a></div>
-                <div class="bg-[#F3F6F6] p-1 rounded-md"><a href="#" class="text-[#144679]"><i class="fa-brands fa-linkedin-in fa-lg"></i></a></div>
+              <section class="relative flex slide-in flex-col items-center bg-white shadow-lg p-2 rounded-2xl mx-auto">
+                <!-- Profile Image -->
+                <div class="absolute -top-16 w-36 md:w-48 h-36 flex items-center justify-center rounded-xl shadow-md">
+                   <img src="./Images/profile.jpg" class="h-full w-full rounded-xl" alt="">
+                </div>
+            
+                <!-- Profile Details -->
+                <div class="mt-20 text-center w-11/12">
+                    <h2 class="text-xl title-font font-bold">Monalisa Ashley</h2>
+                    <div class="bg-[#F3F6F6] p-1 rounded-md"><p class="text-gray-600 mt-1">UI/UX Designer</p></div>
+            
+                    <!-- Social Media Icons -->
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <div class="bg-[#F3F6F6] p-2 rounded-md"><a href="#" class="text-[#1773EA]"><i class="fa-brands fa-facebook-f fa-lg"></i></a></div>
+                        <div class="bg-[#F3F6F6] p-2 rounded-md"><a href="#" class="text-[#1C9CEA]"><i class="fa-brands fa-twitter fa-lg"></i></a></div>
+                        <div class="bg-[#F3F6F6] p-2 rounded-md"><a href="#" class="bg-gradient-to-b from-[#515ECF] via-[#C53184] via-36% via-[#F3673A] via-75% to-[#DB2E7A] text-transparent bg-clip-text">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a></div>
+                        <div class="bg-[#F3F6F6] p-1 rounded-md"><a href="#" class="text-[#144679]"><i class="fa-brands fa-linkedin-in fa-lg"></i></a></div>
+                    </div>
+            
+                    <!-- Contact Details -->
+            <div class="mt-6 space-y-3 w-full p-3 text-left bg-[#E3E3E3] rounded-lg text-[10px] md:text-sm">
+                <div class="flex items-center space-x-3 p-1 rounded-lg">
+                    <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-mobile-screen  text-pink-500"></i></div>
+                   <div class="flex flex-col">
+                    Phone
+                    <p class="text-gray-700 text-sm">+123 456 7890</p>
+                   </div>
+                </div>
+                <div class="flex items-center space-x-3 p-1 rounded-lg">
+                    <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-envelope-open-text text-blue-500"></i></div>
+                    <div class="flex flex-col">
+                        Email
+                        <p class="text-gray-700 text-sm">example@mail.com</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 p-1 rounded-lg">
+                    <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-location-dot text-red-500"></i></div>
+                   <div class="flex flex-col">
+                    Location
+                    <p class="text-gray-700 text-sm">Hong Kong, China</p>
+                   </div>
+                </div>
+                <div class="flex items-center space-x-3 p-1 rounded-lg">
+                    <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-calendar-days text-purple-500"></i></div>
+                    <div class="flex flex-col">
+                        Birthday
+                        <p class="text-gray-700 text-sm">May 27, 1990</p>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Contact Details -->
-    <div class="mt-6 space-y-3 w-full p-3 text-left bg-[#E3E3E3] rounded-lg">
-        <div class="flex items-center space-x-3 p-1 rounded-lg">
-            <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-mobile-screen  text-pink-500"></i></div>
-           <div class="flex flex-col">
-            Phone
-            <p class="text-gray-700 text-sm">+123 456 7890</p>
-           </div>
-        </div>
-        <div class="flex items-center space-x-3 p-1 rounded-lg">
-            <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-envelope-open-text text-blue-500"></i></div>
-            <div class="flex flex-col">
-                Email
-                <p class="text-gray-700 text-sm">example@mail.com</p>
-            </div>
-        </div>
-        <div class="flex items-center space-x-3 p-1 rounded-lg">
-            <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-location-dot text-red-500"></i></div>
-           <div class="flex flex-col">
-            Location
-            <p class="text-gray-700 text-sm">Hong Kong, China</p>
-           </div>
-        </div>
-        <div class="flex items-center space-x-3 p-1 rounded-lg">
-            <div class="bg-white p-2 rounded-md"><i class="fa-solid fa-calendar-days text-purple-500"></i></div>
-            <div class="flex flex-col">
-                Birthday
-                <p class="text-gray-700 text-sm">May 27, 1990</p>
-            </div>
-        </div>
-    </div>
-    
-            <!-- Download CV Button -->
-            <button class="mt-4 px-2 py-2 text-white rounded-lg bg-gradient-to-r from-red-500 to-pink-500">
-                <i class="fa-solid fa-download mr-2"></i> Download CV
-            </button>
-        </div>
-
-    </section>
+            
+                    <!-- Download CV Button -->
+                    <button class="mt-4 px-2 py-2 text-white rounded-lg bg-gradient-to-r from-red-500 to-pink-500">
+                        <i class="fa-solid fa-download mr-2"></i> Download CV
+                    </button>
+                </div>
+        
+            </section>
         </div>
 
         <!-- Right side contents -->
@@ -199,11 +231,11 @@
     <div class="bg-[#F8FBFB] text-center p-6">
         <h3 class="text-3xl font-semibold mt-6">Clients</h3>
     <div class="flex flex-wrap justify-center items-center gap-12 mt-4">
-        <img src="./Images/client1.png" alt="Client 1" class="h-20 w-24">
-        <img src="./Images/client2.png" alt="Client 2" class="h-20 w-24">
-        <img src="./Images/client4.png" alt="Client 3" class="h-20 w-24">
-        <img src="./Images/client5.png" alt="Client 4" class="h-20 w-24">
-        <img src="./Images/client3.png" alt="Client 5" class="h-20 w-24">
+        <img src="./Images/brand.png" alt="Client 1" class="h-20 w-24">
+        <img src="./Images/brand1.png" alt="Client 2" class="h-20 w-24">
+        <img src="./Images/brand2.png" alt="Client 3" class="h-20 w-24">
+        <img src="./Images/brand3.png" alt="Client 4" class="h-20 w-24">
+        <img src="./Images/brand4.png" alt="Client 5" class="h-20 w-24">
     </div>
     </div>
  <!-- Footer -->
