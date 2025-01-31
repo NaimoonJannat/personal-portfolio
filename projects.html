@@ -128,11 +128,11 @@
         </div>
 
         <!-- Right side contents -->
- <div class="w-full md:2/3 flex flex-col">
+ <div class="w-full md:w-2/3 flex flex-col">
 
     <!-- Menu Section for medium to large devices -->
     <nav class="md:flex justify-end hidden">
-       <ul class="flex space-x-6 bg-white shadow-lg rounded-lg p-4">
+       <ul class="flex flex-wrap gap-1 md:gap-2 lg:gap-0 space-x-6 bg-white shadow-lg rounded-lg p-4">
            <li><a href="/about-me.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gray-100 text-sm text-[#44566C] hover:bg-gray-200"><i class="fa-regular fa-user"></i> About</a></li>
            <li><a href="/index.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gray-100 text-sm text-[#44566C] hover:bg-gray-200"><i class="fa-regular fa-file-lines"></i> Resume</a></li>
            <li><a href="/projects.html" class="px-4 py-2 flex flex-col justify-center items-center rounded-md bg-gradient-to-r from-primary-color to-secondary-color text-sm text-white"><i class="fa-brands fa-connectdevelop"></i> Works</a></li>
@@ -142,13 +142,64 @@
    </nav>
 
     <!-- Projects Section -->
- <section class="mt-10 p-2 md:p-8 bg-white shadow-lg rounded-lg">
+ <section class="mt-10 p-4 md:p-8 bg-white shadow-lg rounded-lg">
+    <!-- Section Title -->
     <div class="flex flex-row items-center gap-4 p-4">
         <h2 class="text-2xl title-font font-bold">Portfolio</h2>
-        <hr class="w-28 rounded-md border-[3px] border-transparent" style="border-image-source: linear-gradient(90deg, #FA5252 0%, #DD2476 100%); border-image-slice: 1;">
+        <hr class="w-28 rounded-md border-[3px] border-transparent" 
+            style="border-image-source: linear-gradient(90deg, #FA5252 0%, #DD2476 100%); border-image-slice: 1;">
     </div>
- </section>
 
+    <!-- Category Filters -->
+    <div class="flex flex-wrap space-x-6 px-4 text-gray-600 font-medium text-sm justify-end">
+        <span class="text-red-500 border-b-2 border-red-500 pb-1 cursor-pointer">All</span>
+        <span class="hover:text-red-500 cursor-pointer">Mockup</span>
+        <span class="hover:text-red-500 cursor-pointer">Graphic Design</span>
+        <span class="hover:text-red-500 cursor-pointer">Logo</span>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-2 md:p-4">
+        <!-- Project Card -->
+        <div class="p-2 md:p-4 bg-[#FFF0F0] rounded-lg">
+            <div class="h-40 bg-gray-300 flex items-center justify-center rounded-lg">310X166</div>
+            <p class="mt-2 text-xs text-gray-500">Travel Landing, UX/UI</p>
+            <h3 class="font-bold">Chul Urina</h3>
+        </div>
+        
+        <div class="p-2 md:p-4 bg-[#FFF3FC] rounded-lg">
+            <div class="h-52 bg-gray-300 flex items-center justify-center rounded-lg">310X266</div>
+            <p class="mt-2 text-xs text-gray-500">Travel Landing, UX/UI</p>
+            <h3 class="font-bold">Aura Dione</h3>
+        </div>
+
+        <div class="p-2 md:p-4 bg-[#E9FAFF] rounded-lg">
+            <div class="h-52 bg-gray-300 flex items-center justify-center rounded-lg">310X266</div>
+            <p class="mt-2 text-xs text-gray-500">Travel Landing, UX/UI</p>
+            <h3 class="font-bold">T-Shirt Design</h3>
+        </div>
+
+        <div class="p-2 md:p-4 bg-[#FFFAE9] rounded-lg">
+            <div class="h-44 bg-gray-300 flex items-center justify-center rounded-lg">310X216</div>
+            <p class="mt-2 text-xs text-gray-500">Travel Landing, UX/UI</p>
+            <h3 class="font-bold">Packaging Box</h3>
+        </div>
+
+        <div class="p-2 md:p-4 bg-[#FCF4FF] rounded-lg">
+            <div class="h-44 bg-gray-300 flex items-center justify-center rounded-lg">310X216</div>
+            <p class="mt-2 text-xs text-gray-500">Travel Landing, UX/UI</p>
+            <h3 class="font-bold">Modern Bag Design</h3>
+        </div>
+
+        <div class="p-2 md:p-4 bg-[#FFF0F8] rounded-lg">
+            <div class="h-40 bg-gray-300 flex items-center justify-center rounded-lg">310X166</div>
+            <p class="mt-2 text-xs text-gray-500">Travel Landing, UX/UI</p>
+            <h3 class="font-bold">Chul Urina</h3>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="flex justify-center items-center w-full h-16 text-center bg-[#F8FBFB] text-gray-500 text-xs">&copy; 2021 All Rights Reserved by ib-themes.</footer>
    </div>
 
 
